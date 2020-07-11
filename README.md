@@ -1,2 +1,2 @@
-# minihub
-a mini frontendgaminghub
+# Gaminghub
+Gaming Hub
