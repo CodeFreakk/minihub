@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=01 shrink-to-fit=no"">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+  background:white;
+  width: 100%;
+  height: auto;
+
+}
+.wrapper{
+    border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  margin: 50px auto;
+ 
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #13edf5;
+
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 80%;
+  position: relative;
+  left: 40px;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 80%;
+  height: 45px;
+  left: 41px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid teal;
+
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #0caada;
+  display: block;
+  left: 50px;
+  position: relative;
+  top: -7px;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #000000;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+
+  position: relative;
+  
+  font-family: Arial, Helvetica, sans-serif;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 1px solid rgb(0, 0, 0);
+  background:  #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 2px;
+  outline: none;
+  font-weight: 600;
+  width: 348px;
+  letter-spacing:3px;
+  position: relative;
+  left:40px;
+  height: 49px;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: rgb(0, 0, 0);
+  color: #fff;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+  
+}
+.text-area{
+    width: 500px;
+    font-weight: 700;
+    position: relative;
+    top: -10px;
+    left: -80px;
+    letter-spacing: -3px;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.text-area span{
+    font-weight: 700;
+    color: teal;
+    opacity: 0;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: animate 5s forwards;
+}
+.text-area span{
+    display: inline-block;
+
+}
+.text-area span:nth-of-type(2){
+    animation-delay: .1s;
+}
+.text-area span:nth-of-type(3){
+    animation-delay: .2s;
+}
+.text-area span:nth-of-type(4){
+    animation-delay: .3s;
+}
+.text-area span:nth-of-type(5){
+    animation-delay: 4s;
+}
+.text-area span:nth-of-type(6){
+    animation-delay: .5s;
+}
+.text-area span:nth-of-type(7){
+    animation-delay: .6s;
+}
+.text-area span:nth-of-type(8){
+    animation-delay: .7s;
+}
+
+@keyframes animate{
+    30%{
+        transform: translate(2px,50px) rotate(180deg) scale(1);
+    }
+    60%{
+        transform: translate(5px,10px) rotate(.8deg) scale(1);
+    }
+    100%{
+        transform: translate(0) rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    
+}
+.custom_select{
+    cursor: pointer;
+}
+.sign{
+    color: rgba(2, 69, 100, 0.897);
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    left: 140px;
+    top: -15px;
+    
+}
+p{
+    width: 300px;
+    padding-left: 35px;
+}
+.checkmark{
+    margin-left: -8px;
+    margin-top: 5px;
+}
+
+@media (max-width:100px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+  .form{
+      height: 00vh;
+  }
+}
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="title">
+            <div class="text-area">
+                <span><</span>
+                  <span>C</span>
+                  <span>o</span>
+                     <span>d</span>
+                  <span>i</span>
+                  <span>f</span>
+                  <span>y</span>
+                  <span>/</span>
+                  <span>></span>
+              </div>
+        </div>
+        <div class="sign">Sign Up
+        </div>
+        <div class="form">
+           <div class="inputfield">
+    
+                <input type="text" placeholder="First Name" class="input">
+      
+            </div>
+               
+            <div class="inputfield">
+            
+              <input type="text" placeholder="Last Name" class="input">
+           </div>  
+           <div class="inputfield">
+          
+            <input type="email" placeholder="Email-Address" class="input">
+         </div> 
+         <div class="inputfield">
+           
+            <input type="text" placeholder="Phone" class="input">
+         </div> 
+      
+           <div class="inputfield">
+           
+              <input type="password" placeholder="password" class="input">
+           </div>  
+          <div class="inputfield">
+            
+              <input type="password" placeholder="Confirm Password" class="input">
+           </div> 
+            <div class="inputfield">
+           
+              <div class="custom_select">
+                <select>
+                  <option value="">Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="Other">Prefer not to say</option>
+                </select>
+              </div>
+           </div> 
+       
+        
+       
+          <div class="inputfield terms">
+              <label class="check">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label class = "lbl">
+              <p>Agreed to terms and conditions</p>
+           </div> 
+          <div class="inputfield one">
+            <input type="submit" value="Register" class="btn">
+          </div>
+        </div>
+    </div>
+</body>
+</html>
