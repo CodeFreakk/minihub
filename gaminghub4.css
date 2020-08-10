@@ -9,6 +9,9 @@ section{
     padding: 60px 0
 }
 /* header */
+body{
+    width: 100%;
+}
 
 header{
     width: 100%;
@@ -240,6 +243,21 @@ hr{
     position: relative;
     padding: 0;
 }
+.fa-angle-double-down{
+    color: #c69963;
+    font-size: 50px;
+    position: relative;
+    left: 650px;
+    top: -80px;
+    animation: ease-in mymove 3s infinite;
+    animation-delay: 6s;
+    
+}
+
+@keyframes mymove {
+  from {bottom: -80px;}
+  to {top: -5px;}
+}
 
 .nav-link::before{
     content:"";
@@ -259,5 +277,20 @@ hr{
 }
 }
 
+@media(max-width:500px){
+    .fa-angle-double-down{
+        color: #c69963;
+        position: relative;
+        left: 180px;
+        top: -20px;
+ animation:  mymove 3s infinite;
+    animation-delay: 6s;
+    
+}
 
 
+@keyframes mymove {
+  from {bottom: -80px;}
+  to {top: -5px;}
+}
+}
