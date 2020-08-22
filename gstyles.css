@@ -1,17 +1,17 @@
 body{
     margin: 0;
     padding: 0;
-    display: flex ;
+    display: flex;
    justify-content: center;
    align-items: center;
    min-height: 100vh;
    font-family: fantasy;
-   background: linear-gradient(to bottom, #0f0c29,#302b),url(/game1.jpg)
+   background: linear-gradient(to bottom, #0f0c29,#302b);,#24243e
 }
 .main{
     width: 350px;
     height: 500px;
-    background: rgb(0, 0, 0);
+    background: red;
     overflow: hidden  ;
     background-image: none;
     border-radius: 10px;
