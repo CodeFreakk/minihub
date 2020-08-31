@@ -52,6 +52,7 @@ header > .container{
   
   
 }
+.
 .hamburger-menu i{
     font-size: 19px;
     color: rgba(198,153,99,.7);
@@ -68,15 +69,6 @@ header > .container{
     display: none;
 
 }
-.hamburger-menu .fa-times.hide{
-    display: none;
-
-}
-.hamburger-menu .fa-bars.hide{
-    display: block;
-
-}
-
 
 
 .nav-list{
@@ -196,6 +188,7 @@ hr{
         top: 35px;
         right: 25px;
     }
+    
 }
 @media(min-width:768px ){
    .btn{
