@@ -1,3 +1,6 @@
+html{scroll-behaviour: smooth;
+}
+
  a{
     color:#fff !important;
 }
